@@ -7,11 +7,11 @@ include "root" {
 }
 
 inputs = {
-  publish = true
-  source_path = [
-    "index.js",
-  ]
+  publish       = true
   function_name = "my-test-lambda"
   handler       = "index.lambda_handler"
   runtime       = "nodejs20.x"
+  filename      = "placeholder.zip"
+  create_package         = false
+  local_existing_package = "placeholder.zip"
 }
